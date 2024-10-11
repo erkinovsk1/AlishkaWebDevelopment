@@ -1,12 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Турнир по футболу</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    lkmlkmlmlmlkkjjjjjjjj
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О турнире</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <h1>Турнир по футболу</h1>
+    </header>
+<section class="registration">
+        <h2>Регистрация для участия</h2>
+        <form action="#" method="post">
+            <label for="teamName">Название команды:</label>
+            <input type="text" id="teamName" name="teamName" required>
+
+            <label for="captainName">Имя капитана:</label>
+            <input type="text" id="captainName" name="captainName" required>
+
+            <label for="email">Email для связи:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </section>
+
+    <section class="schedule">
+        <h2>Расписание матчей</h2>
+        <div class="match">
+            <p><strong>Дата:</strong> 12.10.2024</p>
+            <p><strong>Время:</strong> 14:00</p>
+            <p><strong>Команда 1:</strong> Команда А</p>
+            <p><strong>Команда 2:</strong> Команда Б</p>
+            <p><strong>Место:</strong> Стадион 1</p>
+        </div>
+    </section>
     
+
+    <section class="flexbox-layout">
+        <h2>Фото турнира</h2>
+        <div class="flex-container">
+            <div class="flex-item">
+                <img src="Без названия (2).png" alt="Команда 1">
+                <p>Команда 1</p>
+            </div>
+            <div class="flex-item">
+                <img src="pere.png" alt="Команда 2">
+                <p>Команда 2</p>
+            </div>
+            <div class="flex-item">
+                <img src="qere.png" alt="Команда 3">
+                <p>Команда 3</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Salymbekov Football.</p>
+    </footer>
 </body>
 </html>
